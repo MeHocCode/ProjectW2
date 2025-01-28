@@ -1,4 +1,91 @@
-html {
-  height: 100%;
-  width: 100%;
+/* body: Cài đặt font, cỡ chữ */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 100%;
+}
+
+/* header: Đặt màu nền */
+header {
+    background-color: #f0fe86;
+}
+
+/* nav: Đặt màu nền */
+nav {
+    background-color: #333;
+    display: inline-block;
+    width: 1000%;
+}
+nav img {
+    width: 10%;
+    position: relative;
+    top: 20px;
+}
+/* main: Đặt màu nền và cỡ chữ */
+main {
+    background-color: #fff;
+    font-size: 18px;
+}
+
+/* footer: Đặt màu nền */
+footer {
+    background-color: #222;
+}
+
+/* li: Thiết lập hiển thị và chiều rộng */
+li {
+    display: inline;
+    width: 100px;
+    margin: 10px;
+    list-style-type: s;
+}
+/* h1: Căn giữa và thiết lập màu sắc */
+h1 {
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    color: #005f73;
+}
+
+/* p: Đặt chiều cao dòng */
+p {
+    line-height: 1.6;
+}
+nav a:link {
+    color: #fcfcfc; /* Màu cho link chưa được nhấp */
+    text-decoration: none; /* Xóa gạch chân */    
+}
+
+/* Phong cách cho link đã được truy cập */
+nav a:visited {
+    color: #fcfcfc; /* Màu cho link đã được truy cập */
+}
+nav a:hover{
+  background: grey;
+  color: white;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+    background-color: yellow;
+}
+.grid img {
+    width: 100%;
+    height: auto; /* Duy trì tỷ lệ khung hình của ảnh */
+}
+/* Định dạng Flexbox cho lớp flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không còn đủ chỗ */
+    justify-content: space-around; /* Cách đều các phần tử trong không gian có sẵn */
+    gap: 20px; /* Khoảng cách giữa các ảnh */
+    background-color: yellow;
+}
+
+/* Đảm bảo các ảnh có chiều rộng 100% của mỗi phần tử con trong flex */
+.flex img {
+    width: 100px; /* Kích thước cố định cho mỗi ảnh */
+    height: auto; /* Duy trì tỷ lệ khung hình */
 }
